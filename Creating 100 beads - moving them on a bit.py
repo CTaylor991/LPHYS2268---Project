@@ -33,12 +33,7 @@ def oil_beads(x0, y0, number_of_beads=100):
 
 
 bead_x, bead_y = oil_beads(x0=x0, y0=y0)
-# print("X Values:")
-# print(bead_x)
-# print("-------------------------------")
-# print("Y Values:")
-# print(bead_y)
-# print("-------------------------------")
+
 
 plt.scatter(bead_x,bead_y,color='black',s=25)
 plt.scatter(x0,y0,marker='*',s=200)
@@ -55,7 +50,7 @@ steps = 100
 traj_x = np.zeros((steps + 1, number_of_beads))
 traj_y = np.zeros((steps + 1, number_of_beads))
 
-#Store the initial position
+#Store the initial position --CHARLIE TO CHECK THIS IS THE GRIDDED POINTS
 traj_x[0] = bead_x
 traj_y[0] = bead_y
 
